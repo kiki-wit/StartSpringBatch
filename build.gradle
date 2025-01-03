@@ -1,0 +1,41 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.7'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.study.spring-batch'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// Spring Batch Core
+	implementation 'org.springframework.batch:spring-batch-core:5.0.2'
+	// Spring Batch Infrastructure
+	implementation 'org.springframework.batch:spring-batch-infrastructure:5.0.2'
+	// Spring Context
+	implementation 'org.springframework:spring-context:6.0.12'
+	// Database Driver (예: MySQL)
+	implementation 'mysql:mysql-connector-java:8.0.34'
+	// Spring JDBC
+	implementation 'org.springframework:spring-jdbc:6.0.12'
+	// Logging (Optional)
+	implementation 'org.slf4j:slf4j-api:2.0.9'
+	implementation 'ch.qos.logback:logback-classic:1.4.11'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

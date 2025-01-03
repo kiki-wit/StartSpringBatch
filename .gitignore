@@ -1,3 +1,17 @@
+# Gradle wrapper files
+.gradle/
+build/
+
+# Dependency directories
+/.m2/
+.gradle/
+
+# Settings files
+*.properties
+
+# Opsidian
+note/.*
+
 # Compiled class file
 *.class
 
@@ -22,3 +36,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Ignore IDE-specific directories (e.g., VS Code, Eclipse)
+.vscode/
+.idea/
