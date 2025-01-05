@@ -1,4 +1,4 @@
-#### **스프링 배치 (Spring Batch) 기본 개념**
+#### **스프링 배치 (Spring Batch) 기본 개념 이해하기**
 
 스프링 배치는 대용량 배치 작업을 처리하기 위한 프레임워크로, 데이터 처리의 효율성과 안정성을 제공합니다. 주요 기능으로는 대용량 데이터의 읽기, 처리, 쓰기를 관리하며, 트랜잭션 관리, 청크 기반 처리, 에러 처리, 스케줄링 등을 지원합니다.
 
@@ -22,7 +22,7 @@
     <artifactId>spring-batch-core</artifactId>
     <version>4.3.0</version> <!-- 최신 버전 확인 필요 -->
 	</dependency>
-```
+    ```
     
 2. **Gradle 사용 시:**
     
@@ -114,17 +114,4 @@ public ItemWriter<String> exampleItemWriter() {
 3. **Chunk 기반 처리**: 데이터를 한 번에 처리하는 것이 아니라, 일정 단위로 나누어 처리함으로써 메모리 효율성을 높이고 안정성을 제공합니다.
 4. **잡 파라미터**: Job 실행 시 파라미터를 전달하여 유연한 실행이 가능하며, 이를 통해 동적 파라미터 설정이 가능합니다.
 5. **모니터링**: 배치 작업의 실행 결과와 상태를 기록하고, 실패한 작업을 재실행하거나 알림을 보내는 기능을 제공합니다.
-
-#### 6. **배치 작업 스케줄링**
-
-배치 작업은 정기적으로 실행되어야 하는 경우가 많습니다. **Quartz**와 같은 스케줄러를 사용하여 배치 작업을 주기적으로 실행할 수 있습니다.
-
-```java
-<dependency>
-    <groupId>org.springframework.batch</groupId>
-    <artifactId>spring-batch-integration</artifactId>
-</dependency>
-```
-
-Quartz와 통합하여 배치 작업을 스케줄링할 수 있으며, Spring Batch는 `JobLauncher`를 사용하여 배치 작업을 트리거할 수 있습니다.
 
