@@ -1,12 +1,12 @@
 #### **스프링 배치 (Spring Batch) - Chunk-Oriented Processing
 
-### 1. ==**Job 구조**==
+### 1. Job 구조
 - Job : Job 객체 생성
 - JobBuilder : "sampleJob" 이라는 특정 Job 객체 설정
 - JobRepository : JobExecution을 통해 Job의 실행 상태를 관리한다.
 - build() : JobBuilder를 통해 설정 된 Job을 생성한다.
 
-### 2. ==**Step 구조**==
+### 2. Step 구조
 - Step : Step 객체 생성
 - StepBuilder : "sampleStep" 이라는 Step 객체 설정
 - JobRepository : StepExecution을 통해 Step의 실행 상태를 추적, 관리한다.
