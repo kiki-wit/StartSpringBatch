@@ -1,4 +1,4 @@
-#### **스프링 배치 (Spring Batch) - Chunk-Oriented Processing
+#### 스프링 배치 (Spring Batch) - Chunk-Oriented Processing
 
 ### 1. Job 구조
 - Job : Job 객체 생성
