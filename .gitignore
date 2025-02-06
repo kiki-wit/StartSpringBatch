@@ -9,6 +9,12 @@ build/
 # Settings files
 *.properties
 
+# bin 폴더 제외
+/bin/
+
+# 환경 설정 파일 제외
+*.yml
+
 # Opsidian
 note/.*
 
@@ -40,3 +46,6 @@ replay_pid*
 # Ignore IDE-specific directories (e.g., VS Code, Eclipse)
 .vscode/
 .idea/
+
+
+
